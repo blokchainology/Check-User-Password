@@ -1,18 +1,29 @@
-def passvalid(pas = "45781545"):
-    if len(pas) == 0 :
-        print('Your password is empty :(')
-    elif len(pas) < 8 :
-        print('Your password is most of 8 :(')
-    elif pas.isnumeric():
-        print('Your password is not have one letter :(')
-    elif pas.isalpha():
-        print('Your password is not have one number :(')
-    else :
-        print('Your password is valid login was seccsesful')
-        return True
+def isValid(password: str) -> bool:
+    """This function checks the validity of `password`."""
 
-while True :
-    password = input('Enter Password : ')
-    value = passvalid(password)
-    if(value):
-        break
+    if len(password) == 0:
+        print("Your password is empty :(")
+        return False
+
+    elif len(password) < 8:
+        print("You password is most of 8 :(")
+        return False
+        
+    if password.isnumeric():
+        print("Password must have a minimum of 8 characters.")
+        return False
+
+    if password.isalpha(): 
+        print("Password must have minimum 1 number.")
+        return False
+    
+    return True
+   
+logged_in = False
+    
+while not logged_in:
+    password = input('Password: ')
+    
+    if isValid(password):
+        print("Logged in successfuly.")
+        logged_in = True
