@@ -1,17 +1,25 @@
-# Check-User-Password
-This is Function for Valid User Passeord lang : python
+<div align="center">
 
-# How To Use?
+# `Password Verifier`
 
-## Just Use ```passvalid``` (Function) And Valid User Send
+[About](#about) | [Install](#install) | [Usage](#usage)
 
-- You Can Clear Loop ```While``` loop
+</div>
 
-## Validates with
-  - At least eight characters
-  - Use at least one number
-  - Use at least one letter
-  
-  THE END.
-  
-  ZMAT24
+
+## About
+Password Verifier is a program built in Python.
+It allows the user to check that a password is valid.
+
+## Install
+Installation is simple and easy - clone this Repository and run `main.py`.
+
+## Usage
+A password is considered 'valid' when it meets the following requirements:
+  - Contains a minimum of eight characters
+  - Usage of at least one number and character
+
+## Authors
+
+ - ZMAT24
+ - Joshua Rose
